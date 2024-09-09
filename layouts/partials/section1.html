@@ -12,9 +12,9 @@
 
     <div class="content-wrapper">
       <div class="container">
-        {{- range $tiles }}
         <div id="carousel" class="carousel">
-          <div class="feature-card is-bordered has-text-centered">
+        {{- range $tiles }}
+          <div class="feature-card is-bordered has-text-centered carousel-item">
             <div class="card-title">
               <h4>{{ .title }}</h4>
             </div>
@@ -28,8 +28,8 @@
               <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>
             </div>-->
           </div>
-        </div>
         {{- end }}
+        </div>
       </div>
     </div>
   </div>
