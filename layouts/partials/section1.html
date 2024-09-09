@@ -13,7 +13,7 @@
     <div class="content-wrapper">
       <div class="container">
         {{- range $tiles }}
-        <div class="carousel">
+        <div id="carrousel" class="carousel">
           <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
             <div class="card-title">
               <h4>{{ .title }}</h4>
@@ -37,7 +37,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 		
   <script>
-		bulmaCarousel.attach('#carousel-demo', {
+		bulmaCarousel.attach('#carousel', {
 			slidesToScroll: 1,
 			slidesToShow: 4
 		});
