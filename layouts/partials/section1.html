@@ -13,14 +13,14 @@
         <div  class="columns is-multiline">
         {{- range $tiles }}
         <div class="column is-one-third">
-          <div class="feature-card is-bordered has-text-centered ">
+          <div class="card is-bordered has-text-centered ">
             <div class="card-title">
               <h4>{{ .title }}</h4>
             </div>
             <div class="card-icon">
                 <img src="{{ printf "images/illustrations/icons/%s.svg" .icon | relURL }}">
             </div>
-            <div class="card-text">
+            <div class="card-content">
                 <p>{{ .text }}</p>
             </div>
             <!--<div class="card-action">
