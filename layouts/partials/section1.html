@@ -10,9 +10,9 @@
       <div class="divider is-centered"></div>
     </div>
 
-        <div id="carousel" class="carousel">
+        <div  class="grid">
         {{- range $tiles }}
-        <div class="carousel-item">
+        <div class="cell">
           <div class="feature-card is-bordered has-text-centered ">
             <div class="card-title">
               <h4>{{ .title }}</h4>
@@ -32,15 +32,4 @@
         </div>
   </div>
 
-		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-		
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    
-		bulmaCarousel.attach('#carousel', {
-			slidesToScroll: 1,
-			slidesToShow: 3,
-      infinite:true,
-    })});
-		</script>
 </section>
