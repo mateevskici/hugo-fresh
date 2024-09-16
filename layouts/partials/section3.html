@@ -22,16 +22,17 @@
     <div class = "container">
       <p>messages array</p>
       {{- range $messages}}
-      <article class = "message is-warning">
+      <article class="message is-warning">
         <div class = "message-header">
           <p>{{ .msgHeader}}</p>
         </div>
         <div class = "message-body">
           <p>{{ .msgText }}</p>
           </div
-      </article>
-
-      {{- end }}
+</article>
+  
+   
+{{- end }}
 
       </div>
 
